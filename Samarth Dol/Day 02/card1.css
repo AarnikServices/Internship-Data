@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(170, 165, 165);
+}
+.container{
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 350px;
+    margin: auto;
+}
+
+img{
+    max-width: 350px;
+    height: 50%;
+    display: block;
+    object-fit: cover;
+}
+
+.title, .text, .action{
+    width: 100%;
+    padding: 3%;;
+    word-wrap: break-word;
+}
+
+.title p{
+    font-weight:bolder;
+    color: rgb(91, 88, 88);
+}
+
+.action{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ac{
+
+    margin-right: 10%;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+
