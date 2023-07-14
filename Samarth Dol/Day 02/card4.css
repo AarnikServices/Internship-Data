@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(210, 210, 210);
+}
+
+.main{
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 750px;
+    
+}
+
+.column{
+    max-width: 350px;
+    margin: 10px;
+}
+
+.card{
+    max-width: 350px;
+    background-color: white;
+    margin-bottom: 5%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.head h3{
+    word-wrap: break-word;
+    padding-right: 25%;
+}
+a{
+    text-decoration: none;
+}
+.product-card{
+    max-width:170px ;
+    /* max-width:50%; */
+    padding: 2%;
+}
+.media{
+    background-color:rgb(210, 210, 210);
+    max-width: 100%;
+    border-radius: 3px;
+    z-index: 5;
+}
+.media img{
+    z-index: 5;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.product-card p, .product-card h4{
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.icon{
+    z-index: 10;
+    max-width: 25%;
+    float: right;
+    background-color: white;
+    border-radius: 3px;
+    margin: 2% 2% -3% 2%;
+    padding: 3%;
+}
+
+.icon img{
+    max-width: 90%;
+    object-fit: cover;
+    display: block;
+    margin:8%;
+}
+.note{
+    display: flex;
+    padding: 5px;
+}
+.fa-circle-check{
+    color: green;
+}
+.fa-tags{
+    color: rgb(219, 116, 219);
+}
+.text{
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.text p{
+    margin-top: 2%;
+}
+
+.head img{
+    border-radius: 50%;
+    width: 5%;
+    margin-right:2% 
+}
+.head#h2{
+    margin-bottom:10px;
+}
+.info{
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+}
+.info h3{
+    margin-bottom: 5px;
+}
+
+.price{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.price #s1{
+    margin-right: 5px;
+}
+.price #s2{
+    font-weight: 600;
+    font-size: 80%;
+    color: gray;
+    text-decoration: line-through;
+}
+.sizes{
+    /* margin-bottom: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.size{
+    border: 1px solid grey;
+    margin-right: 5px;
+    font-size: 100%;
+    width: 40px;
+    height: 30px;
+    border-radius: 10%;
+    text-align: center;
+    padding: 5px;
+}
+
+#card2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.t-media{
+    margin-right: 10px;
+    width: 100px;
+    background-image: url(images/tshirt.jpeg);
+    background-size: cover;
+    border-radius: 5%;
+    z-index: 0; 
+}
+.tag{
+    float:right;
+    border-radius: 2px;
+    width: 35px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+    background-color: rgb(115, 185, 115);
+    margin-top: 100%;
+}
+.t-info{
+    max-width: 200px;
+    flex-wrap: wrap;
+}
+
+.count{
+
+    display: flex;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 90px;
+    height:30px;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.count p{
+    width: 30px;
+    height: 100%;
+    padding-top: 5px;
+    text-align:center;
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.count i{
+    padding-top: 5px;
+    text-align: center;
+    width: 30px;
+    height: 100%;
+}
+
