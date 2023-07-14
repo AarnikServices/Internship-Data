@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgb(212, 212, 212);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background-color: rgb(216, 215, 215);
+    border: 2px solid rgb(168, 168, 168);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.iner-cont{
+    padding: 20px 20px 20px 20px;
+}
+.Title {
+    font-size: x-large;
+    margin-block-start: 0.67px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: larger;
+}

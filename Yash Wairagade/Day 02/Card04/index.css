@@ -1,0 +1,200 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgb(149, 152, 192);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: rgb(149, 152, 192);
+    border: 2px solid rgb(149, 152, 192);
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub-cont01,
+.sub-cont02,
+.sub-cont03,
+.sub-cont04 {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    margin: 15px;
+    background-color: rgb(215, 220, 250);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-cont01 .box-01,
+.box-02 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sub-cont01 .box-01 {
+    justify-content: space-between;
+}
+.sub-cont01 .box-02 {
+    justify-content: space-around;
+}
+
+.sub-cont01 .box-02 .cont-iner-box01,
+.cont-iner-box02 {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.iner-box01,.iner-box02{
+    width: 270px;
+}
+
+.sub-cont01 .box-02 .cont-iner-box01 {
+    padding-right: 75px;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/XLjCRpCaYpFQTBXKFcwaPS-650-80.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sub-cont01 .box-02 .cont-iner-box02 {
+    padding-left: 75px;
+    background-image: url("https://s.yimg.com/os/creatr-uploaded-images/2020-12/d37e0460-3eeb-11eb-b7f9-449e864b9135");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sub-cont01 .box-02 .cont-iner-txt01,.cont-iner-txt02{
+    padding: 10px;
+}
+
+.sub-cont02{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.sub-cont02 .subinercont1{
+    padding-left: 75px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0242/8410/2720/products/T-SHIRT_ONE_PIECE_LUFFY_AU_CHAPEAU_DE_PAILLE_5_2000x.jpg?v=1627480990");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 170px;
+    height: 170px;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-cont02 .subinercont1 .discount{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    padding: 7px;
+    margin: 7px;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sub-cont02 .subinercont2{
+    padding-left: 15px;
+    margin-left: 15px;
+    width: 200px;
+}
+.sub-cont02 .subinercont2 .count{
+    position: relative;
+    width: 90px;
+    height: auto;
+    padding: 10px 0px 10px 0px;
+    margin: 7px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 7px;
+    color: black;
+}
+
+.iner-cont02 .sub-cont03 .inersubcont1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iner-cont02 .sub-cont04 .logo{
+    display: flex;
+    gap: 8px;
+}
+.iner-cont02 .sub-cont04 .logo img{
+    max-width: 20px;
+    max-height: 40px;
+    border-radius: 30px;
+}
+.iner-cont02 .sub-cont04 .size-avl{
+    display: flex;
+    flex-wrap: wrap;
+}
+.size{
+    width: 25px;
+    height: auto;
+    padding: 10px;
+    margin: 6px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 10px;
+}
+
+.icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    display: flex;
+    margin: 7px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+.counter{
+    padding: 5px;
+    margin: 5px;
+}
+.inersub1{
+    padding: 5px;
+    margin: 5px;
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+}
