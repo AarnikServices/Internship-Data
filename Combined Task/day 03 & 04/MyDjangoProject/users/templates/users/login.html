@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    {% if messages %}
+        {% for msg in messages %}
+
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{msg}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+        {% endfor %}
+    {% endif %}
+    {% if user.is_authenticated %}
+        <h1>You are signed in as {{ user.get_username }}</h1>
+        <h2><a href={% url 'logout' %}>Logout</a></h2>
+    {% else %}
+    
+    <h1>Login</h1>
+    <br/><br/>
+    <form action="" method=POST >
+        {% csrf_token %}
+        <div class="mb-3">
+
+            <input type="text" class="form-control" id="exampleInputEmail1" name="username" aria-describedby="emailHelp" placeholder="Username">
+            </div>
+            <div class="mb-3">
+
+            <input type="password" class="form-control" name= "password" id="exampleInputPassword1" placeholder="Password">
+            </div>
+             <input type="submit" value="Submit" class="btn btn-secondary">
+    </form>
+    <br/>
+    <div class="alert alert-warning" role="alert">
+        New user?<a href="{% url 'register_user' %}" class="alert-link">Click here</a>to register.
+      </div> 
+    {% endif %}
+</div>
+</center>
+{% endblock  %}

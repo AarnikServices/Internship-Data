@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if user.is_authenticated %}
+        <h1>User is logged in.</h1>
+        <h1>About Page can be accessed.</h1>
+        
+        {% else %}
+        <h1>Log in to Access this Page</h1>
+        <h1><a class="nav-link" href="{% url 'profile' %}">Login</a></h1>
+        {% endif %}
+{% endblock  %}
