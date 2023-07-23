@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if submitted %}
+    user data has been added to the database!!
+    <a href="{% url 'MemberData:form' %}">Add Member</a>
+
+{% else %}
+
+<form action = "" method = POST >
+    {% csrf_token %}
+    
+    <div class="container bg-secondary rounded-4">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"><h4>Name:</h4></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name" name = "name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"><h4>Email address:</h4></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name = "email">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"><h4>Enter your address:</h4></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name = "address"></textarea>
+        </div>
+
+        {% comment %} Radio {% endcomment %}
+        <h4>
+            Gender:
+        </h4>
+        <div class="d-flex">
+            <div class="form-check" style="margin-right: 10px;">
+                <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1" value = "Male">
+                <label class="form-check-label" for="flexRadioDefault1">
+                Male
+                </label>
+            </div>
+            <div class="form-check" style="margin-right: 10px;">
+                <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" value = "Female">
+                <label class="form-check-label" for="flexRadioDefault2">
+                Female
+                </label>
+            </div>
+            <div class="form-check" style="margin-right: 10px;">
+                <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault3" value="other">
+                <label class="form-check-label" for="flexRadioDefault3">
+                Other
+                </label>
+            </div>
+        </div>
+
+        {% comment %} CheckBox {% endcomment %}
+        <h4>
+            Preferred transportation mode:
+        </h4>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="vehicle" value="Bike" id="bike">
+            <label class="form-check-label" for="bike">
+            Bike
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="vehicle" value="Car" id="car">
+            <label class="form-check-label" for="car">
+            Car
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="vehicle" value="Bus" id="bus">
+            <label class="form-check-label" for="bus">
+            Bus
+            </label>
+        </div><div class="form-check">
+            <input class="form-check-input" type="checkbox" name="vehicle" value="Train" id="train">
+            <label class="form-check-label" for="train">
+            Train
+            </label>
+        </div><div class="form-check">
+            <input class="form-check-input" type="checkbox" name="vehicle" value="Metro" id="metro">
+            <label class="form-check-label" for="metro">
+            Metro
+            </label>
+        </div> 
+        <input type="submit" value="Submit" class="btn btn-secondary bg-primary">
+    </div>
+
+</form>
+{% endif %}
+{% endblock  %}

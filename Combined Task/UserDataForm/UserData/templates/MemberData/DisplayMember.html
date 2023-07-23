@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card-body">
+    <h3 class="card-title">{{member.name}}</h3>
+    <p class="card-text">
+        <ul>
+            <li>Name:{{member.name}}</li>
+            <li>Email:{{member.email}}</li>
+            <li>Address:{{member.address}}</li>
+            <li>Gender:{{member.gender}}</li>
+            <li>Mode of transport:
+                <ol> 
+                    {% for vehi in member.vehicle %}
+                    <li>{{vehi}}</li>
+                    {% endfor %}
+                </ol>
+            </li>
+        </ul>
+    </p>
+</div>
+
+{% endblock  %}
+\

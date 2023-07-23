@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load DocId %}
+
+    {% if members_list %}
+        <ol>
+            {% for member in members_list  %} 
+                <li><a class="nav-link " href="{% url 'MemberData:Display_Member'  member|mongo_id %}">{{member.name}}</a></li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <h1>No data availaible</h1>
+        <h1><a class="nav-link " href="{% url 'MemberData:form' %}">Click here</a> to add member</h1>
+    {% endif %}
+
+
+{% endblock  %}
