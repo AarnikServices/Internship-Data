@@ -3,11 +3,10 @@
 {% block content %}
 
 {% load DocId %}
-
     {% if members_list %}
         <ol>
             {% for member in members_list  %} 
-                <li><a class="nav-link " href="{% url 'MemberData:Display_Member'  member|mongo_id %}">{{member.name}}</a></li>
+                <li><a class="nav-link " href="{% url 'MemberData:Display_Member'  member_id=member|mongo_id %}">{{member.name}}</a></li>
             {% endfor %}
         </ol>
     {% else %}
